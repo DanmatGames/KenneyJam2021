@@ -7,6 +7,7 @@ public class MinigameDeathCurveController : MonoBehaviour
     public GameObject straightRoad;
     public GameObject curvedRoad;
     public GameObject car;
+    public GameObject controller;
     public GameObject spawnPoints;
 
     public float carSpeed;
@@ -123,7 +124,7 @@ public class MinigameDeathCurveController : MonoBehaviour
         Quaternion.Euler(rotationX, rotationY, rotationZ)
         );
 
-        //Trasnform de car
+        //Position de car
         Vector3 carPosition = new Vector3(
                 spawnPointTransform.position.x,
                 spawnPointTransform.position.y,
@@ -132,6 +133,9 @@ public class MinigameDeathCurveController : MonoBehaviour
 
         //Instancia car
         carInstantiated = Instantiate(car, carPosition, Quaternion.Euler(rotationX, rotationY, rotationZ));
+
+        //Instancia el volante con las flechas
+        Instantiate(controller, spawnPointTransform.transform.GetChild(0).transform);
 
         //Dirección a la que se movera el coche
         switch (hSide, rotationX, rotationZ)
