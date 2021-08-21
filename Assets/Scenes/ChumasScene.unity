@@ -247,13 +247,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039110200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddabc676e78c5e84fb91d4c70bdd0eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 50b28a1196469f74e983163f878de906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameController: {fileID: 0}
-  minigameTitlePrefab: {fileID: 1416573139044345702, guid: 25413f8329cf70842af6b943bd91d400, type: 3}
-  minigamesAmount: 10
-  ruletteRadius: 6
 --- !u!114 &2039110203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +259,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039110200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b199cf12a3bcf6c4598c897c20dd1df5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b9d8604eebb4e0408b2e708044382d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
+  minigameTitlePrefab: {fileID: 1416573139044345702, guid: a84198acd582e984b9431def697e3268, type: 3}
+  minigamesAmount: 5
+  ruletteRadius: 8

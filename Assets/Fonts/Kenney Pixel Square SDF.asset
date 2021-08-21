@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Kenney Pixel Square SDF Material
-  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Shader: {fileID: 4800000, guid: bb680a2bac677c14b9dd1eca87479003, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2476,7 +2476,7 @@ MonoBehaviour:
   m_FallbackFontAssetTable: []
   m_CreationSettings:
     sourceFontFileName: 
-    sourceFontFileGUID: 1ca68a10031addd46ba4ecb16c22468c
+    sourceFontFileGUID: 660653f63e73bac41a3a9912ffeb2ba4
     pointSizeSamplingMode: 0
     pointSize: 58
     padding: 5
