@@ -18,7 +18,7 @@ public class MinigamePiratasController : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Ships").Length == 0)
         {
             Debug.Log("HOLIWI");
-            SceneManager.LoadScene("ChumasScene");
+            SceneManager.LoadScene("Roulette");
         }
     }
 }

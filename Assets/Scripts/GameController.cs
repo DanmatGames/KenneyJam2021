@@ -8,17 +8,11 @@ public class GameController : MonoBehaviour
 
     private void Awake() {
         minigamesDictionary.Add(0, "Cintas");
-        minigamesDictionary.Add(1, "Orbita");
-        minigamesDictionary.Add(2, "Piratas");
-        minigamesDictionary.Add(3, "Sillas");
-        minigamesDictionary.Add(4, "Cintas");
-        minigamesDictionary.Add(5, "Orbita");
-        minigamesDictionary.Add(6, "Piratas");
-        minigamesDictionary.Add(7, "Sillas");
-        minigamesDictionary.Add(8, "Cintas");
-        minigamesDictionary.Add(9, "Orbita");
-        minigamesDictionary.Add(10, "Piratas");
-        minigamesDictionary.Add(11, "Sillas");
+        minigamesDictionary.Add(1, "AlienOrbit");
+        minigamesDictionary.Add(2, "PirateShips");
+        minigamesDictionary.Add(3, "MusicalChairs");
+        minigamesDictionary.Add(4, "RocketPlane");
+        minigamesDictionary.Add(5, "DeathCurve");
         /*
         minigamesDictionary.Add(0, "Minigame A");
         minigamesDictionary.Add(1, "Minigame B");

@@ -591,7 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 2039110203}
   minigameTitlePrefab: {fileID: 1416573139044345702, guid: 25413f8329cf70842af6b943bd91d400, type: 3}
-  minigamesAmount: 10
+  minigamesAmount: 6
   ruletteRadius: 6
 --- !u!114 &2039110203
 MonoBehaviour:
@@ -605,7 +605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b199cf12a3bcf6c4598c897c20dd1df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabTransition: {fileID: 6739086791342038505, guid: ee9b4314628fac343bb902c4b4bad3fc, type: 3}
 --- !u!95 &2039110204
 Animator:
   serializedVersion: 3
