@@ -17,7 +17,6 @@ public class RuletaController : MonoBehaviour
     private int minigameIndex;
     private float ruletteTime = 3f;
     private string selectedMinigame;
-    private bool transitionStarted = false;
 
     private void Awake() {
         gameController = FindObjectOfType<GameController>();
