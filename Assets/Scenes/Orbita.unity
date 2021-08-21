@@ -194,7 +194,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fac2b9e394a3c7249b442eaad5d6443b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c31bd2128902c92438c581785a8d0635, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -293,7 +293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 85b0cddf1c86d6a4aba71f4c6405c25e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7f5304b8bc2b694cab7ea396a97ae57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -421,7 +421,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fac2b9e394a3c7249b442eaad5d6443b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c31bd2128902c92438c581785a8d0635, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 1890990797}
   - component: {fileID: 1890990796}
   - component: {fileID: 1890990798}
+  - component: {fileID: 1890990799}
   m_Layer: 0
   m_Name: playerShip1_blue
   m_TagString: Untagged
@@ -490,7 +491,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c48e7922a61aa914e809beb34ced7cfd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 374e648f481997444ac91fb724b898e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -525,6 +526,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9211371bd5e38434e899efa0eaa34d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {fileID: 365620482}
+  velocidad: 0
+--- !u!114 &1890990799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890990795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352759beb9ec7b74595f2f17e0db56cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anchor: {fileID: 365620482}
