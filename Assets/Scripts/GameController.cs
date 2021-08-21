@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public Dictionary<int, string> minigamesDictionary = new Dictionary<int, string>();
+    public GameObject prefabTransition;
 
     private void Awake() {
         minigamesDictionary.Add(0, "Cintas");

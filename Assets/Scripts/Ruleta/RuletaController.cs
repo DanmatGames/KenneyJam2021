@@ -15,9 +15,9 @@ public class RuletaController : MonoBehaviour
     public float ruletteRadius;
 
     private int minigameIndex;
-    private float ruletteCurrentAngle = 0;
-    private float ruletteTargetAngle;
+    private float ruletteTime = 3f;
     private string selectedMinigame;
+    private bool transitionStarted = false;
 
     private void Awake() {
         gameController = FindObjectOfType<GameController>();
@@ -26,9 +26,7 @@ public class RuletaController : MonoBehaviour
         minigameIndex = minigamesAmount / 2;
         var totalMinigamesAmount = gameController.minigamesDictionary.Count;
         var minigameTextAngle = 180;
-        var angleAmount = 360 / minigamesAmount;
-
-        ruletteTargetAngle = angleAmount*minigameIndex;   
+        var angleAmount = 360 / minigamesAmount;   
 
         for (var i=0; i<minigamesAmount; i++) {
             var newIndex = Random.Range(0, totalMinigamesAmount);
@@ -59,10 +57,13 @@ public class RuletaController : MonoBehaviour
     }
 
     void Update() {
-        ruletteCurrentAngle = Mathf.Lerp(ruletteCurrentAngle, ruletteTargetAngle, 0.02f);
-        transform.localEulerAngles = new Vector3(0f, 0f, ruletteCurrentAngle);
+        ruletteTime -= Time.deltaTime;
+        if (ruletteTime <= 1f && !transitionStarted) {
+            transitionStarted = true;
+            var newTransition = Instantiate(gameController.prefabTransition, Vector3.zero, Quaternion.identity);
+        }
 
-        if (Mathf.Abs(ruletteCurrentAngle - ruletteTargetAngle) < 0.05f) {
+        if (ruletteTime <= 0f) {
             SceneManager.LoadScene(selectedMinigame);
         }
     }
