@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarController : MonoBehaviour
 {
@@ -24,12 +25,14 @@ public class CarController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         //El jugador a perdido el minijuego
-        Destroy(this.gameObject);
+        carSpeed = 0f;
+        SceneManager.LoadScene("Roulette");
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         //El jugador ha ganado el minijuego
         carSpeed = 0f;
+        SceneManager.LoadScene("Roulette");
     }
 }
