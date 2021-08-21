@@ -18,7 +18,7 @@ public class MinigameArrow : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        currentAngle += oscillationSpeed;
+        currentAngle += oscillationSpeed * Time.deltaTime;
         if (currentAngle > 360) {
             currentAngle -= 360;
         }
