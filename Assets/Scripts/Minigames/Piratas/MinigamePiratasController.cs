@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MinigamePiratasController : MonoBehaviour
 {
-    
-    public Transform ship;
-    public Transform anchorpoint;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +15,10 @@ public class MinigamePiratasController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameObject.FindGameObjectsWithTag("Ships").Length == 0)
+        {
+            Debug.Log("HOLIWI");
+            SceneManager.LoadScene("ChumasScene");
+        }
     }
 }
