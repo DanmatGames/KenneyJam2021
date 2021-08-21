@@ -10,10 +10,9 @@ public class MinigameDeathCurveController : MonoBehaviour
     public GameObject controller;
     public GameObject spawnPoints;
 
-    public float carSpeed;
+    public Vector3 direction;
 
     private GameObject carInstantiated;
-    private Vector3 direction;
 
     // Start is called before the first frame update
     void Start()
@@ -159,12 +158,5 @@ public class MinigameDeathCurveController : MonoBehaviour
                 direction = Vector3.left;
                 break;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Movimiento del coche
-        carInstantiated.transform.position += direction * Time.deltaTime * carSpeed;
     }
 }

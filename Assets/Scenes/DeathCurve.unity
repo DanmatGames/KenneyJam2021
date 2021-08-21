@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 640024471}
   m_Layer: 0
   m_Name: MinigameController
-  m_TagString: Untagged
+  m_TagString: minigameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -383,6 +383,7 @@ MonoBehaviour:
   controller: {fileID: 4387740730490380692, guid: fa9daa789db4e674db165f3d7bf2276d, type: 3}
   spawnPoints: {fileID: 543437420}
   carSpeed: 2
+  direction: {x: 0, y: 0, z: 0}
 --- !u!4 &640024472
 Transform:
   m_ObjectHideFlags: 0
