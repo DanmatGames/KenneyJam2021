@@ -11,11 +11,13 @@ public class PlayersRotation : MonoBehaviour
     void Start()
     {
         velocidad = 100f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         transform.RotateAround(anchor.transform.localPosition, Vector3.back, Time.deltaTime * velocidad);
         transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
