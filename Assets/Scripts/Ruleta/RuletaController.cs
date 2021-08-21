@@ -11,7 +11,7 @@ public class RuletaController : MonoBehaviour
 
     public GameObject minigameTitlePrefab;
     public int minigamesAmount;
-    public float ruletteRadius = 8;
+    public float ruletteRadius;
 
     private int minigameIndex;
     private float ruletteCurrentAngle = 0;
@@ -21,11 +21,11 @@ public class RuletaController : MonoBehaviour
         gameController = FindObjectOfType<GameController>();
     }
     void Start() {
+        minigameIndex = Random.Range(8, 12);
         var totalMinigamesAmount = gameController.minigamesDictionary.Count;
         var minigameTextAngle = 180;
         var angleAmount = 360 / minigamesAmount;
 
-        minigameIndex = Random.Range(4, 17);
         ruletteTargetAngle = angleAmount*minigameIndex;   
 
         for (var i=0; i<minigamesAmount; i++) {
