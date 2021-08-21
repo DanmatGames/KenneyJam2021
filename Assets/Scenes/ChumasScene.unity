@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oscillationDistance: 0.2
-  oscillationSpeed: 2
+  oscillationSpeed: 360
 --- !u!1 &1187649246
 GameObject:
   m_ObjectHideFlags: 0
