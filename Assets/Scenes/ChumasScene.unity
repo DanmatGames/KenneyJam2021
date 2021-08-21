@@ -216,7 +216,7 @@ RectTransform:
   m_Children:
   - {fileID: 1720933502}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -320,36 +320,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oscillationDistance: 0.2
   oscillationSpeed: 360
---- !u!1 &802286663
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 802286664}
-  m_Layer: 0
-  m_Name: TransitionController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &802286664
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802286663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152873015
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1187649246
 GameObject:
@@ -511,7 +481,7 @@ GameObject:
   - component: {fileID: 1720933504}
   - component: {fileID: 1720933503}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -619,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddabc676e78c5e84fb91d4c70bdd0eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameController: {fileID: 0}
+  gameController: {fileID: 2039110203}
   minigameTitlePrefab: {fileID: 1416573139044345702, guid: 25413f8329cf70842af6b943bd91d400, type: 3}
   minigamesAmount: 10
   ruletteRadius: 6
@@ -635,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b199cf12a3bcf6c4598c897c20dd1df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabTransition: {fileID: 0}
+  prefabTransition: {fileID: 6739086791342038505, guid: ee9b4314628fac343bb902c4b4bad3fc, type: 3}
 --- !u!95 &2039110204
 Animator:
   serializedVersion: 3

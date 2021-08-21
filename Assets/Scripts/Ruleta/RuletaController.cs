@@ -58,10 +58,6 @@ public class RuletaController : MonoBehaviour
 
     void Update() {
         ruletteTime -= Time.deltaTime;
-        if (ruletteTime <= 1f && !transitionStarted) {
-            transitionStarted = true;
-            var newTransition = Instantiate(gameController.prefabTransition, Vector3.zero, Quaternion.identity);
-        }
 
         if (ruletteTime <= 0f) {
             SceneManager.LoadScene(selectedMinigame);
