@@ -33,10 +33,6 @@ public class GameController : MonoBehaviour
         minigamesDictionary.Add(23, "Minigame X");
         minigamesDictionary.Add(24, "Minigame Y");
         minigamesDictionary.Add(25, "Minigame Z");
-        minigamesDictionary.Add(26, "Danmat");
-        minigamesDictionary.Add(27, "Darsirious");
-        minigamesDictionary.Add(28, "Chumas");
-        minigamesDictionary.Add(29, "Lacho");
     }
 
     void Update() {
