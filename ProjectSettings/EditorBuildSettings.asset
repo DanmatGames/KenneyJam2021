@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Cintas.unity
+    guid: 9b14f72b460061f45adb465cce09b711
+  - enabled: 1
+    path: Assets/Scenes/Orbita.unity
+    guid: a2bf872b81898cd42bf579ff7edde51f
+  - enabled: 1
+    path: Assets/Scenes/Piratas.unity
+    guid: cbb34bdbac93c604da87655914391b37
+  - enabled: 1
+    path: Assets/Scenes/Sillas.unity
+    guid: 2d4786d0296423f44a86c9399b1fe714
   m_configObjects: {}

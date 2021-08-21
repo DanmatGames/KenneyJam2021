@@ -7,6 +7,19 @@ public class GameController : MonoBehaviour
     public Dictionary<int, string> minigamesDictionary = new Dictionary<int, string>();
 
     private void Awake() {
+        minigamesDictionary.Add(0, "Cintas");
+        minigamesDictionary.Add(1, "Orbita");
+        minigamesDictionary.Add(2, "Piratas");
+        minigamesDictionary.Add(3, "Sillas");
+        minigamesDictionary.Add(4, "Cintas");
+        minigamesDictionary.Add(5, "Orbita");
+        minigamesDictionary.Add(6, "Piratas");
+        minigamesDictionary.Add(7, "Sillas");
+        minigamesDictionary.Add(8, "Cintas");
+        minigamesDictionary.Add(9, "Orbita");
+        minigamesDictionary.Add(10, "Piratas");
+        minigamesDictionary.Add(11, "Sillas");
+        /*
         minigamesDictionary.Add(0, "Minigame A");
         minigamesDictionary.Add(1, "Minigame B");
         minigamesDictionary.Add(2, "Minigame C");
@@ -33,6 +46,7 @@ public class GameController : MonoBehaviour
         minigamesDictionary.Add(23, "Minigame X");
         minigamesDictionary.Add(24, "Minigame Y");
         minigamesDictionary.Add(25, "Minigame Z");
+        */
     }
 
     void Update() {
