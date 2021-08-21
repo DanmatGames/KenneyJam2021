@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d469094a84f876047bfaf9c11ed8fab5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kenney Mini
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5c2519306b5d6df40b7852bbac88c0bb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

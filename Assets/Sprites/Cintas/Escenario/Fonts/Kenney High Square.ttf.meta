@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a8b6ee1761eb7a141b23b3723d46b131
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kenney High Square
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6a0745db795700c499e6146a1d55287d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
