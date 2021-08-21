@@ -281,14 +281,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 640024470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44c34557d849db469d847fabff05bf1, type: 3}
+  m_Script: {fileID: 11500000, guid: 115ffac0706076c4f83f00088b8beccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  straightRoad: {fileID: 7855196862536141524, guid: a9e9ced17fb71874198682894ce84c0f, type: 3}
-  curvedRoad: {fileID: 8067222849734373510, guid: 1099cf208bce31a4d9b41f95fdb73158, type: 3}
-  car: {fileID: 2470982761650276483, guid: c523144c036d2e24d99d837bafec6f80, type: 3}
+  straightRoad: {fileID: 7855196862536141524, guid: c6bbe46bbcece4c4a9c886e8ea98d823, type: 3}
+  curvedRoad: {fileID: 8067222849734373510, guid: 7aeb1c4b7eb0e8c48946bbb95bb6537c, type: 3}
+  car: {fileID: 2470982761650276483, guid: 9afc3946c32d34b4faad7077cc5fb92e, type: 3}
   spawnPoints: {fileID: 543437420}
-  carSpeed: 5
+  carSpeed: 2
 --- !u!4 &640024472
 Transform:
   m_ObjectHideFlags: 0
