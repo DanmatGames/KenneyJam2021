@@ -36,6 +36,5 @@ public class CarController : MonoBehaviour
         //El jugador ha ganado el minijuego
         carSpeed = 0f;
         gameController.StopTimer(false);
-        SceneManager.LoadScene("Roulette");
     }
 }

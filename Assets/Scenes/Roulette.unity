@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
   minigameTitlePrefab: {fileID: 1416573139044345702, guid: 25413f8329cf70842af6b943bd91d400, type: 3}
-  minigamesAmount: 6
+  minigamesAmount: 10
   ruletteRadius: 6
 --- !u!95 &2039110204
 Animator:

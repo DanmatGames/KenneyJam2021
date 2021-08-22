@@ -26,7 +26,6 @@ public class MinigamePiratasController : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Ships").Length == 0)
         {
             gameController.StopTimer(false);
-            SceneManager.LoadScene("Roulette");
         }
     }
 }
