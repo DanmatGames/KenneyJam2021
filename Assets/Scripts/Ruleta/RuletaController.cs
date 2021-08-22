@@ -60,6 +60,7 @@ public class RuletaController : MonoBehaviour
 
         if (ruletteTime <= 0f) {
             SceneManager.LoadScene(selectedMinigame);
+            gameController.StartTimer();
         }
     }
 }
