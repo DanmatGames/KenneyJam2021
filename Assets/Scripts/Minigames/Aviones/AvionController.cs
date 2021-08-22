@@ -34,7 +34,6 @@ public class AvionController : MonoBehaviour
         initialTransform = middleTransform;
         targetTransform = middleTransform;
 
-        Instantiate(bulletObject, middleTransform.position + Vector3.up * distanceBetweenBullets, bulletObject.transform.rotation);
         for (var i=1; i<50; i++) {
             var index = Random.Range(0, 4);
             if (i % 3 == 0) {
@@ -96,9 +95,11 @@ public class AvionController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         gameController.StopTimer(false);
+        Destroy(collision.gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         gameController.StopTimer(true);
+        Destroy(collision.gameObject);
     }
 }

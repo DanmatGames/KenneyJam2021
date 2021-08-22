@@ -35,12 +35,19 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        minigamesDictionary.Add(0, "Cintas");
+        /*minigamesDictionary.Add(0, "Cintas");
         minigamesDictionary.Add(1, "AlienOrbit");
         minigamesDictionary.Add(2, "PirateShips");
         minigamesDictionary.Add(3, "MusicalChairs");
         minigamesDictionary.Add(4, "RocketPlane");
-        minigamesDictionary.Add(5, "DeathCurve");
+        minigamesDictionary.Add(5, "DeathCurve");*/
+
+        minigamesDictionary.Add(0, "AlienOrbit");
+        minigamesDictionary.Add(1, "AlienOrbit");
+        minigamesDictionary.Add(2, "AlienOrbit");
+        minigamesDictionary.Add(3, "RocketPlane");
+        minigamesDictionary.Add(4, "RocketPlane");
+        minigamesDictionary.Add(5, "RocketPlane");
 
         timerBar = filledBar.GetComponent<Image>();
         live1 = livesPanel.transform.GetChild(0).GetComponent<Image>();
