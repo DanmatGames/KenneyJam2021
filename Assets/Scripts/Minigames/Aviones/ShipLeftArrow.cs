@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShipLeftArrow : MonoBehaviour {
     public AvionController avionController;
     private void Update() {
-        transform.position = new Vector3(avionController.gameObject.transform.position.x - 1f, transform.position.y);
+        transform.position = new Vector3(avionController.gameObject.transform.position.x - 1.5f, transform.position.y);
     }
 
     private void OnMouseDown() {
