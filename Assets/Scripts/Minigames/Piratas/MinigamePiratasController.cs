@@ -17,6 +17,12 @@ public class MinigamePiratasController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+
+            audio.Play();  // plays sound when collided.
+        }
         if (GameObject.FindGameObjectsWithTag("Ships").Length == 0)
         {
             gameController.StopTimer(false);
