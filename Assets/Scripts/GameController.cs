@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     private Image timerBar;
     private Image live1, live2, live3;
     private bool startTimer = false;
+    private bool lost = false;
 
     public Dictionary<int, string> minigamesDictionary = new Dictionary<int, string>();
 
@@ -72,8 +73,11 @@ public class GameController : MonoBehaviour
     {
         startTimer = false;
         if(lostMinigame) removeLive();
-        timerBar.fillAmount = minigamesTimer;
-        SceneManager.LoadScene("Roulette");
+        if (!lost)
+        {
+            timerBar.fillAmount = minigamesTimer;
+            SceneManager.LoadScene("Roulette");
+        }
     }
 
     private void removeLive()
@@ -89,7 +93,8 @@ public class GameController : MonoBehaviour
                 break;
             case 0:
                 live1.color = Color.white;
-                //TODO Aqui va lo que ocurre si te quedas sin vidas
+                lost = true;
+                SceneManager.LoadScene("YouLost");
                 break;
         }
     }
