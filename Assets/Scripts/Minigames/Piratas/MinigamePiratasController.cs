@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MinigamePiratasController : MonoBehaviour
 {
 
+    private GameController gameController;
+
     // Start is called before the first frame update
     void Start()
     {
-    
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -17,7 +19,7 @@ public class MinigamePiratasController : MonoBehaviour
     {
         if (GameObject.FindGameObjectsWithTag("Ships").Length == 0)
         {
-            Debug.Log("HOLIWI");
+            gameController.StopTimer(false);
             SceneManager.LoadScene("Roulette");
         }
     }

@@ -28,13 +28,14 @@ public class CarController : MonoBehaviour
     {
         //El jugador a perdido el minijuego
         carSpeed = 0f;
-        gameController.StopTimer();
+        gameController.StopTimer(true);
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         //El jugador ha ganado el minijuego
         carSpeed = 0f;
+        gameController.StopTimer(false);
         SceneManager.LoadScene("Roulette");
     }
 }

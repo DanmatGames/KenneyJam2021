@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
             }
             else
             {
-                StopTimer();
+                StopTimer(true);
             }
         }
     }
@@ -68,10 +68,10 @@ public class GameController : MonoBehaviour
         startTimer = true;
     }
 
-    public void StopTimer()
+    public void StopTimer(bool lostMinigame)
     {
         startTimer = false;
-        removeLive();
+        if(lostMinigame) removeLive();
         timerBar.fillAmount = minigamesTimer;
         SceneManager.LoadScene("Roulette");
     }
